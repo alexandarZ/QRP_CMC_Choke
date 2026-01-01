@@ -2,6 +2,8 @@
 
 A PCB for a lightweight QRP common-mode choke — rated for **up to 10 W (SSB & CW)** or **5 W on FT8**.
 
+![PCB v1.1](/images/PCB_v1_1.png)
+
 ---
 
 ### Overview
@@ -17,13 +19,13 @@ This common-mode choke (CMC) is built around an **Amidon FT82-43** core with a s
 ---
 
 ### Practical guidance
-- For 40–10 m common-mode suppression, many builders start with **~8–10 symmetrical turns**, which are usually sufficient for typical QRP antenna setups.  
+- For 40–10 m common-mode suppression, start with **~8–10 symmetrical turns** of 0.4mm2 enamelled wire, which are usually sufficient for typical QRP antenna setups.
 - More turns increase common-mode impedance at lower frequencies, but also raise inter-winding capacitance — measure and adjust for your target bands.  
 - Aim for **at least 20 dB of common-mode attenuation** across the target band where practical.  
 - Target an **SWR as close to 1:1 as possible** after installing the choke; SWR below **1.5:1** is generally acceptable for most QRP uses.
 
 **Wire & mechanical tips**
-- Use enamelled copper wire sized appropriately for your power and mechanical needs — commonly 0.4–0.8 mm enamelled wire works well for QRP.  
+- Use enamelled copper wire sized appropriately for your power and mechanical needs — commonly 0.4–0.6 mm enamelled wire works well for QRP.  
 - Keep pigtails and external leads short to avoid added series inductance.  
 - Secure the nested cores mechanically with non-conductive tape or heat-shrink to prevent rotation or movement.
 
@@ -35,11 +37,11 @@ Recommended guide (detailed):
   https://lance.conryclan.com/home/measuring-common-mode-choke-performance/
 
 Quick checklist:
-1. **Calibrate** your VNA (or impedance meter) for the measurement band.  
-2. **Measure insertion loss / S21** in common-mode configuration to estimate attenuation.  
-3. **Measure impedance / Z** vs frequency to verify target common-mode impedance.  
-4. **Verify SWR** of your antenna/system with the choke installed to confirm no adverse effects.  
-5. Iterate turns and retest until you hit the desired tradeoff between attenuation and bandwidth.
+1. **Calibrate** your VNA for the measurement band.  
+2. **Measure S21 parameter** in common-mode configuration to estimate CMC attenuation.
+3. **Measure S21 parameter** in insertion loss configuration to estimate CMC insertion loss  
+4. **Measure impedance / Z** vs frequency to verify target common-mode impedance.  
+5. **Verify SWR** of your antenna/system with the choke installed to confirm no adverse effects.  
 
 ---
 
@@ -53,11 +55,26 @@ Quick checklist:
 | 40 m  | -32.78 dB | -0.21 dB | 1.014 |
 | 30 m  | -33.96 dB | -0.29 dB | 1.019 |
 | 20 m  | -34.39 dB | -0.32 dB | 1.026 |
-| 17 m  | -34.16 dB | -0.24 dB | 1.037 |
-| 15 m  | -33.45 dB | -0.11 dB | 1.047 |
-| 12 m  | -32.24 dB | +0.11 dB | 1.059 |
-| 10 m  | -30.62 dB | +0.37 dB | 1.073 |
+| 17 m  | -34.16 dB | -0.34 dB | 1.037 |
+| 15 m  | -33.45 dB | -0.33 dB | 1.047 |
+| 12 m  | -32.24 dB | -0.34 dB | 1.059 |
+| 10 m  | -30.62 dB | -0.35 dB | 1.073 |
 
+## Build / Manufacture
 
+You can order this PCB from JLCPCB or any other service using the provided Gerber archive.
+
+**Download Gerber**  
+FT82 version: `./gerbers/FT82_43_CMC_Choke.zip`  
+FT114 version: `./gerbers/FT114_43_CMC_Choke.zip` 
+
+### Recommended settings
+Use the following manufacturing parameters when placing the order:
+
+- **Board thickness:** `1.6 mm`  
+- **Layers:** `2 (two-layer)`  
+- **Material:** `FR-4`  
+- **Copper weight:** `1 oz (35 µm)`  
+- **Solder mask:** Chose your preferred
 
 ### 73s de YT3MW
