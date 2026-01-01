@@ -58,6 +58,20 @@ Quick checklist:
 | 12 m  | -32.24 dB | +0.11 dB | 1.059 |
 | 10 m  | -30.62 dB | +0.37 dB | 1.073 |
 
+## Build / Manufacture
 
+You can order this PCB from JLCPCB or any other service using the provided Gerber archive.
+
+**Download Gerber**  
+`./gerbers/qrp-cmc-pcb-v1.1-gerber.zip` 
+
+### Recommended settings
+Use the following manufacturing parameters when placing the order:
+
+- **Board thickness:** `1.6 mm`  
+- **Layers:** `2 (two-layer)`  
+- **Material:** `FR-4`  
+- **Copper weight:** `1 oz (35 µm)`  
+- **Solder mask:** Chose your preferred
 
 ### 73s de YT3MW

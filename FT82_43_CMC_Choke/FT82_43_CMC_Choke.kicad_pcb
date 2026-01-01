@@ -3148,7 +3148,7 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "CC BY-SA 4.0"
+	(gr_text "(CC BY-SA 4.0)"
 		(at 142.1 96.7 270)
 		(layer "B.SilkS")
 		(uuid "1a953790-0fa4-4149-ab3a-745707fedbb9")
