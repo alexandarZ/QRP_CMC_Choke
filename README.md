@@ -2,6 +2,8 @@
 
 A PCB for a lightweight QRP common-mode choke — rated for **up to 10 W (SSB & CW)** or **5 W on FT8**.
 
+![PCB v1.1](/images/PCB_v11.png)
+
 ---
 
 ### Overview
