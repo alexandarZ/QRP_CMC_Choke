@@ -45,9 +45,9 @@ Quick checklist:
 
 ---
 
-### Build results from v1.0
+### Build results
 
-![PCB v1.0](/images/PCB_v1_0.png)
+![PCB v1.1](/images/QRP_CMC_Choke_v1_1.jpg)
 
 | Band | CMC attenuation (dB) | Insertion loss (dB) | VSWR |
 |---|---:|---:|---:|
@@ -62,11 +62,14 @@ Quick checklist:
 
 ## Build / Manufacture
 
-You can order this PCB from JLCPCB or any other service using the provided Gerber archive.
+![PCBWay logo](/images/pcbway_logo.png)
 
-**Download Gerber**  
+I had a PCB manufactured for my project by **PCBWay** company and the experience was outstanding. The ordering process was straightforward, Gerber review options clear, and the price — considering the final product — is very economical. The build cost is low, yet the result feels far from cheap.
+Quality of manufacture is top-tier: fine trace definition, neat vias, and excellent tolerance control. The board looks phenomenal — professional finish, crisp silkscreen, and clean markings. After assembly the choke behaved exactly as expected; the performance and results are of very high quality.
+I recommend this company to anyone producing similar boards — great value for money and reliable results. Big thanks to the team for the fast, precise work and for helping bring this project to life.
+
+**Gerber files:**  
 FT82 version: `./gerbers/FT82_43_CMC_Choke.zip`  
-FT114 version: `./gerbers/FT114_43_CMC_Choke.zip` 
 
 ### Recommended settings
 Use the following manufacturing parameters when placing the order:
